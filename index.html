@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Max & Jennifer - Nossa História</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body {
+      background: #fff8f5;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+    }
+    h1, h2, h3 {
+      color: #8e3b46;
+      margin-top: 30px;
+    }
+    .card-cronometro {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      transition: all 0.3s ease-in-out;
+    }
+    .card-cronometro:hover {
+      transform: scale(1.02);
+    }
+    .music-card {
+      background-color: #fdfdfd;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 15px;
+      text-align: left;
+    }
+    .music-card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .music-info {
+      padding-top: 10px;
+    }
+    .music-title {
+      font-weight: bold;
+      font-size: 1rem;
+    }
+    .music-artist {
+      color: #666;
+      font-size: 0.9rem;
+    }
+    audio {
+      width: 100%;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Max & Jennifer</h1>
+  <h2>Nossa História 💖</h2>
+
+  <!-- Cronômetros -->
+  <section class="container mt-4">
+    <div class="row" id="cronometros"></div>
+  </section>
+
+  <!-- Músicas -->
+  <section class="container mt-5">
+    <h3><i class="bi bi-music-note-beamed"></i> Nossas Músicas</h3>
+    <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+
+      <div class="col">
+        <div class="music-card">
+          <img src="imagens/capa1.jpg" alt="Amor que nos faz um">
+          <div class="music-info">
+            <div class="music-title">Amor que nos faz um</div>
+            <div class="music-artist">Palavra Antiga</div>
+            <audio controls>
+              <source src="musicas/amor-que-nos-faz-um.mp3" type="audio/mpeg">
+            </audio>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="music-card">
+          <img src="imagens/capa2.jpg" alt="Die With a Smile">
+          <div class="music-info">
+            <div class="music-title">Die With A Smile</div>
+            <div class="music-artist">Lady Gaga ft. Bruno Mars</div>
+            <audio controls>
+              <source src="musicas/die-with-a-smile.mp3" type="audio/mpeg">
+            </audio>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="music-card">
+          <img src="imagens/capa3.jpg" alt="Ela Une Todas as Coisas">
+          <div class="music-info">
+            <div class="music-title">Ela Une Todas as Coisas</div>
+            <div class="music-artist">Jorge Vercilo</div>
+            <audio controls>
+              <source src="musicas/ela-une.mp3" type="audio/mpeg">
+            </audio>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="container mt-5">
+  <h3><i class="bi bi-camera"></i> Momentos Marcantes 📸</h3>
+  <div id="carouselFotos" class="carousel slide mt-4" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <div class="polaroid mx-auto">
+          <img src="imagens/foto 1.jpg" alt="Primeiro Beijo" class="img-fluid polaroid-img">
+          <div class="caption">Primeiro Beijo - 12/05/2013</div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="polaroid mx-auto">
+          <img src="imagens/foto 2.jpg" alt="Noivado" class="img-fluid polaroid-img">
+          <div class="caption">Noivado - 25/09/2019</div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="polaroid mx-auto">
+          <img src="imagens/foto 3.jpg" alt="Casamento" class="img-fluid polaroid-img">
+          <div class="caption">Casamento - 25/09/2020</div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="polaroid mx-auto">
+          <img src="imagens/foto 4.jpg" alt="Casamento" class="img-fluid polaroid-img">
+          <div class="caption">Casamento - 25/09/2020</div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="polaroid mx-auto">
+          <img src="imagens/foto 5.jpg" alt="Casamento" class="img-fluid polaroid-img">
+          <div class="caption">Casamento - 25/09/2020</div>
+        </div>
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselFotos" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselFotos" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</section>
+
+<style>
+  .polaroid {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 90%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+
+  .polaroid-img {
+    object-fit: contain;
+    max-height: 400px;
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .caption {
+    margin-top: 10px;
+    font-size: 0.95rem;
+    color: #444;
+    font-style: italic;
+  }
+
+  @media (max-width: 768px) {
+    .polaroid-img {
+      max-height: 250px;
+    }
+    .caption {
+      font-size: 0.85rem;
+    }
+  }
+</style>
+
+
+  <footer class="mt-5 text-muted">
+    <p>Com amor, de Max para Jennifer 💌</p>
+  </footer>
+
+  <!-- Script Cronômetros -->
+  <script>
+    const datas = {
+      "Primeiro Beijo": "2013-05-12T00:00:00",
+      "Início do Namoro": "2013-11-25T00:00:00",
+      "Noivado": "2019-09-25T00:00:00",
+      "Casamento": "2020-09-25T00:00:00"
+    };
+
+    function atualizarCronometros() {
+      const container = document.getElementById("cronometros");
+      container.innerHTML = "";
+
+      Object.entries(datas).forEach(([evento, data]) => {
+        const inicio = new Date(data);
+        const agora = new Date();
+        let diff = agora - inicio;
+
+        const segundos = Math.floor(diff / 1000) % 60;
+        const minutos = Math.floor(diff / (1000 * 60)) % 60;
+        const horas = Math.floor(diff / (1000 * 60 * 60)) % 24;
+        const diasTotais = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const anos = Math.floor(diasTotais / 365.25);
+        const meses = Math.floor((diasTotais % 365.25) / 30.44);
+        const dias = Math.floor((diasTotais % 365.25) % 30.44);
+
+        const col = document.createElement("div");
+        col.className = "col-12 col-md-6 col-lg-3 mb-3";
+
+        col.innerHTML = `
+          <div class="card-cronometro h-100">
+            <h5><i class="bi bi-heart-fill text-danger"></i> ${evento}</h5>
+            <p><strong>${inicio.toLocaleDateString()}</strong></p>
+            <p>${anos} anos, ${meses} meses, ${dias} dias</p>
+            <p>${horas}h ${minutos}m ${segundos}s</p>
+          </div>
+        `;
+        container.appendChild(col);
+      });
+    }
+
+    setInterval(atualizarCronometros, 1000);
+    atualizarCronometros();
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
